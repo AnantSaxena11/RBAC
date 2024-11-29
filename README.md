@@ -1,9 +1,8 @@
-# Role Based Access Control (...still in dev mode...)
+# Role-Based Access Control (RBAC) Application
 
-This is a Role Based Access Control application using Nodejs, Express, Passport Js, etc.
-You can use this application as the starting point for whatever project you are going to build which needs authentication and authorization.
+This is a Role-Based Access Control (RBAC) application built using Node.js, Express.js, Passport.js, and MongoDB. It serves as a foundational template for projects requiring robust authentication and authorization systems.
 
-For authentication we have only Email & Password option but other authentication options using OAuth/OAuth2.0 like Google, Facebook, Apple, GitHub, etc, can be easily incorporated.
+For authentication we have only Email & Password option but other authentication options using OAuth/OAuth2.0 like Google, Facebook, Apple, GitHub, etc, can be easily incorporated in near future.
 
 The application is based on the **MVC pattern** i.e. Model View Controller.
 
@@ -20,7 +19,7 @@ The application is _almost_ **production ready**.
 Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/trulymittal/role-based-access-control
+git clone https://github.com/AnantSaxena11/RBAC.git
 ```
 
 Step 2: cd into the cloned repo and run:
@@ -55,12 +54,6 @@ npm start
 
 ## Author
 
-- [**Truly Mittal**](https://trulymittal.com)
+- [**Anant Saxena**](http://www.anantsaxena.me/)
 
-## Contribute
 
-You can fork this repo and send me a PR.
-
-## License
-
-This project is licensed under the MIT License.
