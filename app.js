@@ -96,13 +96,6 @@ mongoose
   })
   .catch((err) => console.log(err.message));
 
-// function ensureAuthenticated(req, res, next) {
-//   if (req.isAuthenticated()) {
-//     next();
-//   } else {
-//     res.redirect('/auth/login');
-//   }
-// }
 
 function ensureAdmin(req, res, next) {
   if (req.user.role === roles.admin) {
