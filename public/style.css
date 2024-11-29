@@ -8,10 +8,9 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #faf9fc; /* Light lavender background */
   font-family: 'Space Mono', monospace;
   font-family: 'Open Sans', sans-serif;
-
   max-width: 760px;
   margin: auto;
   font-size: 1rem;
@@ -31,32 +30,35 @@ nav > ul > li {
 nav > ul > li > a,
 a {
   text-decoration: none;
-  color: #276fdb;
+  color: #9c27b0; /* Purple accent color */
   padding: 8px 16px;
   border-radius: 8px;
 }
 
 nav > ul > li > a:hover,
 a:hover {
-  background-color: #f2fbfd;
+  background-color: #f3e5f5; /* Light pinkish hover effect */
 }
 
 h1.title {
   text-align: center;
   margin: 1rem;
   text-decoration: underline;
+  color: #6200ea; /* Darker purple */
 }
+
 div.tutorial-info {
   border: 4px solid #d1d5db;
   padding: 32px;
   border-radius: 16px;
   margin-top: 32px;
+  background-color: #e8f5e9; /* Light green background */
 }
+
 ol.tutorial-info {
   font-size: 1.5rem;
   padding: 0 32px;
-  /* list-style-type: square; */
-  /* list-style: disc; */
+  list-style-type: square;
 }
 
 .tutorial-info > li {
@@ -73,9 +75,10 @@ main {
 form.lg-form {
   margin: 16px;
   padding: 32px;
-  border: 4px solid #d1d5db;
+  border: 4px solid #e1bee7; /* Light purple border */
   min-width: 400px;
   border-radius: 16px;
+  background-color: #f3e5f5; /* Light pink background */
 }
 
 .lg-form label,
@@ -95,26 +98,26 @@ form.lg-form {
   border-radius: 8px;
   padding: 8px;
   font-size: 1rem;
-  background-color: #f3f4f6;
+  background-color: #e1f5fe; /* Light cyan */
 }
 
 .lg-form input[type='submit'] {
   margin: 16px 0;
-  background-color: #2781db;
+  background-color: #ff4081; /* Bright pink */
   color: #ffffff;
   cursor: pointer;
 }
 
 input:focus {
   outline: none;
-  background-color: #fff;
-  border: 2px solid #f3f4f6;
-  /* box-shadow: 0 0 8px #fdf2f8; */
+  background-color: #ffffff;
+  border: 2px solid #e8f5e9; /* Light green focus border */
 }
 
 h1.table {
   text-decoration: underline;
   margin: 16px 0;
+  color: #00796b; /* Teal color */
 }
 
 table {
@@ -122,7 +125,7 @@ table {
   min-width: 600px;
   border: none;
   border-spacing: 0;
-  border: 4px solid #d1d5db;
+  border: 4px solid #80deea; /* Light cyan border */
   padding: 16px;
   border-radius: 16px;
 }
@@ -134,8 +137,7 @@ thead {
 
 thead tr {
   border-radius: 8px;
-  background-color: #272ddb;
-  overflow: hidden;
+  background-color: #00796b; /* Teal header */
 }
 
 thead th {
@@ -156,7 +158,6 @@ thead th:nth-child(1) {
   max-width: 44px;
 }
 
-
 tbody tr td {
   padding: 8px 0;
   margin: 8px 0;
@@ -164,7 +165,7 @@ tbody tr td {
 
 .manage-user-form input[type='submit'] {
   background: transparent;
-  color: #277edb;
+  color: #9c27b0; /* Purple */
   border: none;
   outline: none;
   padding: 8px 16px;
@@ -173,7 +174,7 @@ tbody tr td {
 }
 
 .manage-user-form input[type='submit']:hover {
-  background-color: #fdf2f8;
+  background-color: #f3e5f5; /* Light pink hover */
 }
 
 .manage-user-form select {
@@ -181,7 +182,7 @@ tbody tr td {
   font-size: 1.05rem;
   padding: 6px 12px;
   border-radius: 8px;
-  border: 2px solid #f3f4f6;
+  border: 2px solid #e1f5fe; /* Cyan border */
 }
 
 thead tr th:first-child,
@@ -197,9 +198,10 @@ tbody tr td:first-child {
 .profile {
   min-width: 600px;
   padding: 16px;
-  border: 4px solid #d1d5db;
+  border: 4px solid #e1bee7; /* Light purple border */
   border-radius: 16px;
   margin-top: 32px;
+  background-color: #f3e5f5; /* Light pink background */
 }
 
 .profile > div {
@@ -208,10 +210,12 @@ tbody tr td:first-child {
 
 .profile .title {
   font-weight: bold;
+  color: #9c27b0; /* Purple title color */
 }
 
 .goback {
   cursor: pointer;
+  color: #00796b; /* Teal color */
 }
 
 /* Container for messages */
@@ -231,8 +235,8 @@ ul.messages {
   overflow: hidden;
   margin: 16px;
   padding: 0; /* Remove default padding */
-  background-color: #f9fafb; /* Neutral background */
-  border: 2px solid #e5e7eb; /* Light border for better structure */
+  background-color: #f3e5f5; /* Light pink background */
+  border: 2px solid #e1f5fe; /* Cyan border */
 }
 
 /* List items with padding and spacing */
@@ -245,26 +249,26 @@ ul.messages li {
 
 /* Error message styling */
 ul.messages .error {
-  background-color: #f87171; /* Light red background */
-  color: #fff; /* White text for better contrast */
+  background-color: #ffccbc; /* Light orange */
+  color: #d32f2f; /* Red text */
 }
 
 /* Success message styling */
 ul.messages .success {
-  background-color: #6ee7b7; /* Light green background */
-  color: #064e3b; /* Dark green text */
+  background-color: #a5d6a7; /* Light green background */
+  color: #388e3c; /* Dark green text */
 }
 
 /* Warning message styling */
 ul.messages .warning {
-  background-color: #fcd34d; /* Light yellow background */
-  color: #92400e; /* Brownish-orange text */
+  background-color: #fff59d; /* Light yellow background */
+  color: #f57f17; /* Dark yellow text */
 }
 
 /* Info message styling */
 ul.messages .info {
-  background-color: #93c5fd; /* Light blue background */
-  color: #1e3a8a; /* Dark blue text */
+  background-color: #81d4fa; /* Light blue background */
+  color: #0288d1; /* Blue text */
 }
 
 /* Add hover effect for messages (optional) */
@@ -280,17 +284,17 @@ h1.page-title {
   margin: 1rem;
   text-decoration: underline;
   font-size: 2rem;
-  color: #1f2937; /* Dark gray */
+  color: #00796b; /* Teal color */
 }
 
 /* Box containing informational content */
 div.info-box {
-  border: 4px solid #d1d5db;
+  border: 4px solid #e1f5fe; /* Light cyan border */
   padding: 32px;
   border-radius: 16px;
   margin-top: 32px;
-  background-color: #f9fafb; /* Neutral background */
-  color: #374151; /* Slightly darker text */
+  background-color: #e1bee7; /* Light purple background */
+  color: #5e35b1; /* Purple text */
 }
 
 /* Ordered list within the info box */
@@ -315,281 +319,31 @@ ol.info-list {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f3e5f5; /* Light pink background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.form-title {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-label {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-.form-input {
+.login-form input[type="text"],
+.login-form input[type="password"] {
   width: 100%;
   padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  outline: none;
-}
-
-.form-input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-.form-button {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.form-button:hover {
-  background-color: #0056b3;
-}
-
-.form-footer {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.form-text {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.form-link {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.form-link:hover {
-  text-decoration: underline;
-}
-
-/* General Page Title */
-.page-title {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-/* Table Styles */
-.user-table {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  border-collapse: collapse;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.table-header {
-  background-color: #007bff;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 10px;
-  text-align: left;
-}
-
-.table-row:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.table-cell {
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-.user-link {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.user-link:hover {
-  text-decoration: underline;
-}
-
-/* Form Styles */
-.role-form {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.role-select {
-  padding: 5px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.submit-btn {
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  color: #fff;
-  background-color: #28a745;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.submit-btn:hover {
-  background-color: #218838;
-}
-
-/* General Page Title */
-.page-title {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.go-back {
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #007bff;
-  margin-right: 10px;
-  text-decoration: none;
-}
-
-.go-back:hover {
-  color: #0056b3;
-}
-
-/* Profile Container */
-.profile-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #f9f9f9;
+  margin-bottom: 12px;
+  border: 1px solid #e1f5fe; /* Cyan border */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.profile-item {
-  margin-bottom: 15px;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.profile-title {
   font-size: 1rem;
-  font-weight: bold;
-  color: #555;
-  margin: 0;
 }
 
-.profile-subtitle {
-  font-size: 1.2rem;
-  color: #333;
-  margin: 5px 0 0 0;
-  word-wrap: break-word;
-}
-
-pre.profile-subtitle {
-  background: #e9ecef;
-  padding: 10px;
-  border-radius: 4px;
-  overflow-x: auto;
-  font-size: 0.9rem;
-}
-
-/* Page Title */
-.page-title {
-  font-size: 2rem;
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Form Container */
-.form-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Form Group */
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-label {
-  display: block;
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-.form-input {
+.login-form input[type="submit"] {
+  background-color: #9c27b0; /* Purple button */
+  color: white;
+  padding: 12px;
   width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.form-input:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
-}
-
-/* Submit Button */
-.form-submit {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #007bff;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
 
-.form-submit:hover {
-  background-color: #0056b3;
-}
-
-/* Footer Section */
-.form-footer {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.form-link {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.form-link:hover {
-  text-decoration: underline;
+.login-form input[type="submit"]:hover {
+  background-color: #7b1fa2; /* Dark purple on hover */
 }
