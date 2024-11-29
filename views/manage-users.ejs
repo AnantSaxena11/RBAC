@@ -1,30 +1,34 @@
-<%- include ('layouts/header') %>
-<h1 class="table">Manage Users</h1>
+<%- include('layouts/header') %>
+<h1 class="page-title">Manage Users</h1>
 
-<table class="table">
+<table class="user-table">
   <thead>
-    <th>id</th>
-    <th>email</th>
-    <th>role</th>
+    <tr>
+      <th class="table-header">ID</th>
+      <th class="table-header">Email</th>
+      <th class="table-header">Role</th>
+    </tr>
   </thead>
   <tbody>
     <% users.forEach(user => { %>
-    <tr>
-      <td><%= user.id %></td>
-      <td><a href="/admin/user/<%= user.id %>"><%= user.email %></a></td>
-      <td>
+    <tr class="table-row">
+      <td class="table-cell"><%= user.id %></td>
+      <td class="table-cell">
+        <a href="/admin/user/<%= user.id %>" class="user-link"><%= user.email %></a>
+      </td>
+      <td class="table-cell">
         <form
           action="/admin/update-role"
           method="post"
-          class="manage-user-form"
+          class="role-form"
         >
           <input type="hidden" name="id" value="<%= user.id %>" />
-          <select name="role" id="role">
-            <option value="ADMIN" <%= user.role === 'ADMIN' ? 'selected' : '' %> >Admin</option>
+          <select name="role" id="role" class="role-select">
+            <option value="ADMIN" <%= user.role === 'ADMIN' ? 'selected' : '' %>>Admin</option>
             <option value="MODERATOR" <%= user.role === 'MODERATOR' ? 'selected' : '' %>>Moderator</option>
             <option value="CLIENT" <%= user.role === 'CLIENT' ? 'selected' : '' %>>Client</option>
           </select>
-          <input type="submit" value="update">
+          <input type="submit" value="Update" class="submit-btn">
         </form>
       </td>
     </tr>
@@ -32,4 +36,4 @@
   </tbody>
 </table>
 
-<%- include ('layouts/footer') %>
+<%- include('layouts/footer') %>

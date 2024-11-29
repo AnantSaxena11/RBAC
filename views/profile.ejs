@@ -1,23 +1,26 @@
 <%- include('./layouts/header') %>
 
-<h1><span class="goback" onclick="window.history.back()">←</span> Profile</h1>
+<h1 class="page-title">
+  <span class="go-back" onclick="window.history.back()">←</span> Profile
+</h1>
 
-<div class="profile">
-  <div>
-    <p class="title">ID</p>
-    <p class="subtitle"><%= person.id %></p>
+<div class="profile-container">
+  <div class="profile-item">
+    <p class="profile-title">ID</p>
+    <p class="profile-subtitle"><%= person.id %></p>
   </div>
-  <div>
-    <p class="title">Email/username</p>
-    <p class="subtitle"><%= person.email %></p>
+  <div class="profile-item">
+    <p class="profile-title">Email/Username</p>
+    <p class="profile-subtitle"><%= person.email %></p>
   </div>
-  <div>
-    <p class="title">Role</p>
-    <p class="subtitle"><%= person.role %></p>
+  <div class="profile-item">
+    <p class="profile-title">Role</p>
+    <p class="profile-subtitle"><%= person.role %></p>
   </div>
-  <div>
-    <p class="title">User object</p>
-    <pre class="subtitle"><%= person %></pre>
+  <div class="profile-item">
+    <p class="profile-title">User Object</p>
+    <pre class="profile-subtitle"><%= JSON.stringify(person, null, 2) %></pre>
   </div>
 </div>
+
 <%- include('./layouts/footer') %>

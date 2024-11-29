@@ -1,31 +1,45 @@
 <%- include('./layouts/header') %>
 
-<h1>Register</h1>
-<form action="/auth/register" method="post" class="lg-form">
-  <div>
-    <label for="email">Email/Username</label>
+<h1 class="page-title">Register</h1>
+<form action="/auth/register" method="post" class="form-container">
+  <div class="form-group">
+    <label for="email" class="form-label">Email/Username</label>
     <input
       type="text"
       name="email"
       id="email"
+      class="form-input"
       value="<%= locals.email ? email : '' %>"
+      required
     />
   </div>
-  <div>
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" />
+  <div class="form-group">
+    <label for="password" class="form-label">Password</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      class="form-input"
+      required
+    />
   </div>
-  <div>
-    <label for="password2">Confirm password</label>
-    <input type="password" name="password2" id="password2" />
+  <div class="form-group">
+    <label for="password2" class="form-label">Confirm Password</label>
+    <input
+      type="password"
+      name="password2"
+      id="password2"
+      class="form-input"
+      required
+    />
   </div>
-  <div>
-    <input type="submit" value="Register" />
+  <div class="form-group">
+    <input type="submit" value="Register" class="form-submit" />
   </div>
 </form>
-<div>
+<div class="form-footer">
   <p>
-    Already have an account? <span><a href="/auth/login">Login</a></span>
+    Already have an account? <span><a href="/auth/login" class="form-link">Login</a></span>
   </p>
 </div>
 <br />
